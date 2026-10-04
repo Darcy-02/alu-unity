@@ -113,6 +113,39 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &45170634 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1333005286514670, guid: 662d7c2e640c0e644af5e2e3ba148d64,
+    type: 2}
+  m_PrefabInternal: {fileID: 1343777611}
+--- !u!54 &45170635
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 45170634}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &45170636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 45170634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44894d53de25412438e83503d386c248, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  jumpForce: 5
 --- !u!1 &215347823
 GameObject:
   m_ObjectHideFlags: 0
@@ -808,6 +841,10 @@ Prefab:
     - target: {fileID: 4909639852363584, guid: 662d7c2e640c0e644af5e2e3ba148d64, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1333005286514670, guid: 662d7c2e640c0e644af5e2e3ba148d64, type: 2}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 662d7c2e640c0e644af5e2e3ba148d64, type: 2}
