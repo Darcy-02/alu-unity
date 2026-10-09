@@ -29,8 +29,8 @@ public class PlayerController : MonoBehaviour
 
     void MovePlayer()
     {
-        float moveX = Input.GetAxis("Horizontal"); // A/D or Left/Right
-        float moveZ = Input.GetAxis("Vertical");   // W/S or Up/Down
+        float moveX = Input.GetAxis("Vertical"); // A/D or Left/Right
+        float moveZ = Input.GetAxis("Horizontal");   // W/S or Up/Down
 
         // Keep Y velocity for jumping/falling
         Vector3 velocity = new Vector3(moveX * moveSpeed, rb.velocity.y, moveZ * moveSpeed);
